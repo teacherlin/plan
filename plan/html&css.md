@@ -79,7 +79,45 @@
 + id属性
 + class属性
 
-#### 练习：制作一个没有样式的网页示例 [示例链接]()
+#### 练习：制作一个没有样式的网页示例 
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>我的第一个网页</h1>
+    <h2>选择题</h2>
+    <h3>第一题</h3>
+    <p>你喜欢哪一个水果？</p>
+    <ul>
+        <li>A:香蕉</li>
+        <li>B:苹果</li>
+        <li>C:鸭梨</li>
+        <li>D:水蜜桃</li>
+    </ul>
+    <h3>第二题</h3>
+    <p>你喜欢哪一项运动？</p>
+    <ul>
+        <li>A:篮球</li>
+        <li>B:足球</li>
+        <li>C:排球</li>
+        <li>D:乒乓球</li>
+    </ul>
+    <h3>第二题</h3>
+    <p>你喜欢哪一张图片？</p>
+    <ul>
+        <li>A:<img src="images/1.jpg"></li>
+        <li>B:<img src="images/3.jpg"></li>
+        <li>C:<img src="images/5.jpg"></li>
+        <li>D:<img src="images/7.jpg"></li>
+    </ul>
+</body>
+</html>
+``` 
+
 
 #### 什么是css，css能做什么？
 *层叠样式表，可以通过css定义html在浏览器中显示的样式，例如字体、颜色等*
@@ -104,6 +142,61 @@
 + background-color 
 + width height 长度值px
 + font-size 
+
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        h1{
+            color:red;
+        }
+        h2{
+            background-color: yellow;
+        }
+        .question{
+            background-color: green;
+            color:white;
+            font-size: 30px;
+        }
+        #first-img{
+            width:80px;
+            height:80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>我的第一个网页</h1>
+    <h2>选择题</h2>
+    <h3>第一题</h3>
+    <p class="question">你喜欢哪一个水果？</p>
+    <ul>
+        <li>A:香蕉</li>
+        <li>B:苹果</li>
+        <li>C:鸭梨</li>
+        <li>D:水蜜桃</li>
+    </ul>
+    <h3>第二题</h3>
+    <p class="question">你喜欢哪一项运动？</p>
+    <ul>
+        <li>A:篮球</li>
+        <li>B:足球</li>
+        <li>C:排球</li>
+        <li>D:乒乓球</li>
+    </ul>
+    <h3>第二题</h3>
+    <p class="question">你喜欢哪一张图片？</p>
+    <ul>
+        <li>A:<img id="first-img" src="images/1.jpg"></li>
+        <li>B:<img src="images/3.jpg"></li>
+        <li>C:<img src="images/5.jpg"></li>
+        <li>D:<img src="images/7.jpg"></li>
+    </ul>
+</body>
+</html>
+```
 
 
 到这里，同学们已经完成了一个有内容的网页。但是同学们有没有发现一个问题，哪些元素自己占用了一行，哪些元素会和其他元素保持在一行。
