@@ -55,6 +55,19 @@
 + head标签 文档的头部，描述了文档的各种属性。例如标题，编码。
 + body标签 网页要展示出来的内容，都放在body标签中。
 
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+``` 
+
 *标签都是有语义的，html中的常用标签和属性，如下*
 + h1 h2 h3 h4 h5 h6 标题标签
 + p 段落：如果需要显示文章，就把文章的段落放到p标签中。
