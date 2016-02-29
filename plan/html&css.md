@@ -32,6 +32,9 @@
 + 插件：emmit，生成魔板。
 + 火狐浏览器和firebug。
 
+#### 阶段性课程简介
+接下来的课程开始学习html和css，*目标：拿到设计稿后，可以利用本阶段的知识点将设计稿编程真正的网页*
+
 *准备就绪，开始正式课程内容*
 
 ### 第一天、HTML&CSS基础
@@ -123,10 +126,12 @@
 *层叠样式表，可以通过css定义html在浏览器中显示的样式，例如字体、颜色等*
 
 
-#### 如何定义样式
+#### 如何定义样式:
 + 将样式写在style标签中（定义样式三种方法的一种）
 + 通过选择器选择元素
 + 使用css属性定义样式
+
+*css通过设置元素样式，使html变得丰富多彩，那么，如何设置html元素的样式呢，首先需要找到这个元素，然后改变（设置）这个元素的样式。通过选择器可以选择元素，通过css属性可以设置样式。*
 
 #### css常用选择器
 + \* 选择所有元素（通配符）
@@ -136,6 +141,47 @@
 + selector selector 层级选择器
 
 ##### 示例代码 [链接]()
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        /*通用选择器*/
+        /**{color:red;}*/
+        h1{
+            color:red;
+        }
+        #my-id{
+            color:blue;
+        }
+        .my-class{
+            color:yellow;
+        }
+        #list li{
+            color:green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>标签（元素）选择器</h1>
+    <h2 id="my-id">id选择器</h2>
+    <h3 class="my-class">class（类）选择器</h3>
+    <ul id="list">
+        <li>香蕉</li>
+        <li>苹果</li>
+        <li>鸭梨</li>
+    </ul>
+    <ul>
+        <li>足球</li>
+        <li>篮球</li>
+        <li>羽毛球</li>
+    </ul>
+</body>
+</html>
+```
 
 #### 练习：为之前制作的网页添加样式，使用下列属性
 + color 颜色值rgb
@@ -207,13 +253,59 @@
 + 行级块元素：img 特点：可以设置宽高
 
 ##### 示例代码 [链接]()
-
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>第一个h1标签</h1>
+    <h1>第二个h1标签</h1>
+    <p>第一个p标签</p>
+    <p>第二个p标签</p>
+    <ul>
+        <li>第一个li</li>
+        <li>第二个li</li>
+        <li>第三个li</li>
+    </ul>
+    <a>第一个a标签</a>
+    <a>第二个a标签</a>
+    <img src="images/1.jpg" alt="">
+    <img src="images/2.jpg" alt="">
+</body>
+</html>
+```
 那么有没有办法把两个块元素放到一行显示呢，肯定是可以的，具体方法如下
 
 #### 元素浮动（float属性）
 同学们已经知道了快元素独立成行，那如何让多个块元素可以在一行显示呢。
 
 ##### 示例代码 [链接]()
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        #list li{
+            float:left;
+            border:1px solid #f00;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li>香蕉</li>
+        <li>苹果</li>
+        <li>鸭梨</li>
+    </ul>
+</body>
+</html>
+```
 
 #### 练习：
 1. 使用float图片父级的li元素浮动。
