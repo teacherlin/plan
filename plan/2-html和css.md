@@ -27,10 +27,10 @@
     <title>Document</title>
 </head>
 <body>
-    
+
 </body>
 </html>
-``` 
+```
 
 *标签都是有语义的，html中的常用标签和属性，如下*
 + h1 h2 h3 h4 h5 h6 标题标签
@@ -43,7 +43,7 @@
 + id属性
 + class属性
 
-#### 练习：制作一个没有样式的网页示例 
+#### 练习：制作一个没有样式的网页示例
 ``` html
 <!DOCTYPE html>
 <html lang="en">
@@ -80,7 +80,7 @@
     </ul>
 </body>
 </html>
-``` 
+```
 
 
 #### 什么是css，css能做什么？
@@ -186,9 +186,9 @@
 
 #### 练习：为之前制作的网页添加样式，使用下列属性
 + color 颜色值rgb
-+ background-color 
++ background-color
 + width height 长度值px
-+ font-size 
++ font-size
 
 ``` html
 <!DOCTYPE html>
